@@ -1,21 +1,10 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #4e73df, #1cc88a, #36b9cc, #f6c23e);
-    background-size: 400% 400%;
-    animation: gradientMove 10s ease infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
+    background: #111;
+    color: white;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 20px;
 }
 
 button {
@@ -25,12 +14,15 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: transform 0.2s, background 0.3s;
-    background: #4e73df;
-    color: white;
 }
 
-button:hover {
-    transform: scale(1.1);
+#gameContainer {
+    margin-top: 20px;
 }
-                                                                                                        
+
+iframe {
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+}
