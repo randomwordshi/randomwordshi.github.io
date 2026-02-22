@@ -1,9 +1,22 @@
-let count = 0;
+fetch("games.json")
+  .then(response => response.json())
+  .then(games => {
+    const gameButtons = document.getElementById("gameButtons");
+    const gameContainer = document.getElementById("gameContainer");
 
-const clickBtn = document.getElementById("clickBtn");
-const counter = document.getElementById("counter");
+    games.forEach(game => {
+      const button = document.createElement("button");
+      button.textContent = game.name;
 
-clickBtn.addEventListener("click", () => {
-    count++;
-    counter.textContent = "Clicks: " + count;
-});
+      button.addEventListener("click", () => {
+        gameContainer.innerHTML = `
+          <iframe src="${game.url}" allowfullscreen></iframe>
+        `;
+      });
+
+      gameButtons.appendChild(button);
+    });
+  })
+  .catch(error => {
+    console.error("Error loading games:", error);
+  });
