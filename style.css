@@ -38,20 +38,6 @@ button:hover {
     color: white;
 }
 
-#themeToggle {
-    background: #333;
-    color: white;
-}
-
-.dark-mode {
-    background: #111 !important;
-    color: white;
-}
-
-.dark-mode .container {
-    background: rgba(40, 40, 40, 0.9);
-}
-
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
