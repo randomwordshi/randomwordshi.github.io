@@ -1,13 +1,35 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #4e73df, #1cc88a, #4e73df);
+    background: linear-gradient(-45deg, #4e73df, #1cc88a, #f6c23e, #4e73df);
     background-size: 200% 200%;
     animation: gradientMove 10s ease infinite;
     text-align: center;
     padding: 20px;
     color: white;
     min-height: 100vh;
+}
+
+.centered-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 40px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.centered-container h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.centered-container p {
+    margin: 0;
+    font-size: 1.1em;
+    opacity: 0.9;
 }
 
 button {
@@ -17,6 +39,17 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+}
+
+#gameContainer {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
 }
 
 @keyframes gradientMove {
